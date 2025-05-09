@@ -5,7 +5,6 @@
 }
 
 :root {
-    font: var(--body-sm);
     --font-family-leckerli: "Leckerli One", cursive;
     --font-family-baloo: "Baloo 2", sans-serif;
     --font-family-open-sans: "Open Sans", sans-serif;

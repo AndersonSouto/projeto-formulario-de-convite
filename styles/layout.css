@@ -1,0 +1,46 @@
+#app {
+    /* display: grid;
+    grid-template-columns: ; */
+    display: flex;
+    /* padding: 1.25rem 1.25rem 0 1.25rem; */
+    gap: 1.25rem;
+    /* border: 1.25rem solid var(--shape-background); */
+    border-radius: 1.25rem;
+    height: 100vh;
+    
+}
+
+aside {
+    width: 27.5rem;
+    height: 45rem;
+    border: 1.25rem solid var(--shape-background);
+    border-radius: 1.25rem 0 0 1.25rem;
+    background: url(../assets/Background.png) 50% / cover no-repeat;
+
+    & .aside-container {
+        margin: 2rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    & img {
+        width: 2.86rem;
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    & h1 {
+        font: var(--logo);
+        color: var(--pink);
+        margin-bottom: .25rem;
+    }
+
+    & p {
+        font: var(--body-md);
+        color: var(--text-headling);
+        font-weight: 300;
+    }
+
+
+}
+
