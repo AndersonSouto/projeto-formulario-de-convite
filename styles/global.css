@@ -48,3 +48,12 @@
     --text-heading: #F9F9F9;
 }
 
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
