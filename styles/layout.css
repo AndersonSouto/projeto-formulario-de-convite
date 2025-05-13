@@ -1,7 +1,6 @@
 #app {
     display: flex;
     height: 100vh;
-    /* width: 100%; */
     overflow: hidden;
     justify-content: center;
     
@@ -55,7 +54,7 @@ main {
     & h1 {
         font: var(--heading-md);
         color: var(--text-heading);
-        
+
     }
 
     & .main-container {
