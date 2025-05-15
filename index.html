@@ -48,7 +48,7 @@
 
                             <label for="title">Título</label>
                             <input type="text" name="title" id="title"
-                            placeholder="Nome do evento">
+                            placeholder="Nome do evento" required>
 
                         </div>
 
@@ -95,7 +95,9 @@
                                         <label for="online">Online</label>
 
                                     </div>
+
                                 </div>
+
                             </div>
 
                             <div class="input-wrapper flex-1">
@@ -105,6 +107,7 @@
                                 placeholder="Link ou endereço">
 
                             </div>
+
                         </div>
                         
                         <div class="text-wrapper">
@@ -113,6 +116,67 @@
                             <textarea name="description" id="description" rows="5" cols="30"
                             placeholder="Escreva sobre os detalhes do evento"></textarea>
                         </div>
+
+                    </fieldset>
+
+                    <fieldset class="customization">
+
+                        <div class="header">
+                            <img src="/assets/icons/paintbrush.svg" alt="">
+                            <h2>Personalização</h2>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label>Cor principal</label>
+                            <div class="radio-wrapper">
+
+                                <div class="radio-inner color-picker" style="background: var(--brand-light)">
+                                    <input type="radio" name="mainColor" id="mainColor" value="brandLight">
+                                </div>
+                                
+                                <div class="radio-inner" style="background: var(--navy) ;">
+                                    <input type="radio" name="mainColor" id="mainColor" value="navy">
+                                </div>
+                                
+                                <div class="radio-inner" style="background: var(--purple)">
+                                    <input type="radio" name="mainColor" id="mainColor" value="purple">
+                                </div>
+                                
+                                <div class="radio-inner" style="background: var(--fuschia)">
+                                    <input type="radio" name="mainColor" id="mainColor" value="fuschia">
+                                </div>
+                                
+                                <div class="radio-inner" style="background: var(--pink)">
+                                    <input type="radio" name="mainColor" id="mainColor" value="pink">
+                                </div>
+                                
+                                <div class="radio-inner" style="background: var(--danger)">
+                                    <input type="radio" name="mainColor" id="mainColor" value="danger">
+                                </div>
+                                
+                                <div class="radio-inner" style="background: var(--orange)">
+                                    <input type="radio" name="mainColor" id="mainColor" value="orange">
+                                </div>
+                                
+                                <div class="radio-inner" style="background: var(--yellow)">
+                                    <input type="radio" name="mainColor" id="mainColor" value="yellow">
+                                </div>
+                                
+                                <div class="radio-inner" style="background: var(--lime)">
+                                    <input type="radio" name="mainColor" id="mainColor" value="lime">
+                                </div>
+                                
+                                <div class="radio-inner" style="background: var(--green)">
+                                    <input type="radio" name="mainColor" id="mainColor" value="green">
+                                </div>
+                                
+                                <div class="radio-inner" style="background: var(--cyan)">
+                                    <input type="radio" name="mainColor" id="mainColor" value="cyan">
+                                </div>
+                                
+                            </div>
+                        </div>
+
                     </fieldset>
 
                 </form>

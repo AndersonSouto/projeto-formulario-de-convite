@@ -8,8 +8,16 @@ input, textarea {
     
     font: var(--body-md);
     color: var(--input-placeholder);
-      
+    
 }
+
+input:focus,
+textarea:focus {
+    border-color: var(--brand-light);
+    outline: none;
+}
+
+
 
 ::placeholder {
     color: var(--input-placeholder);
@@ -20,7 +28,6 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 }
 input[type="datetime-local"] {
     text-transform: uppercase;
-    
 }
 
 .header {

@@ -1,25 +1,30 @@
 .radio-wrapper {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(8.06rem, 1fr));
-    gap: 0.25rem;
-    background-color: var(--input-base);
-    /* para radio da parte "tipo" */
-    border: 1px solid var(--input-stroke);
-    border-radius: .5rem;
-    padding: .25rem .25rem;
-    min-height: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+    
+
+    &:has(.color-picker){
+        min-height: 2.5rem;
+        gap: .75rem;
+    }
+
+    &:has(svg) {
+        gap: 0.25rem;
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+        padding: .25rem .25rem;
+        min-height: 3rem;
+    }
+    
 }
 
 .radio-inner {
     display: flex;
-    background-color: var(--input-base);
-    border-radius: 0.31rem;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
-    padding: .25rem;
-
     position: relative;
+
     & input,
     & input:focus,
     & input:hover {
@@ -27,30 +32,50 @@
         position: absolute;
         inset: 0;
     }
-
-    &:has(:checked) {
-        background-color: var(--shape-button);
-        color: var(--text-heading);
-
-        & label {
-            color: var(--text-heading);
-            font-weight: 600;
-        }
-
-        & svg path{
-            fill: var(--brand-light);
-        }
-    }
-
-
-    
-
     & label {
         padding: 0;
     }
 
+    &:has(svg){
+        border-radius: 0.31rem;
+        gap: .5rem;
+        padding: .25rem;
+
+        &:has(:checked) {
+        background-color: var(--shape-button);
+        color: var(--text-heading);
+
+            & label {
+                color: var(--text-heading);
+                font-weight: 600;
+            }
+
+            & svg path{
+                fill: var(--brand-light);
+            }
+
+        }
+
+    }
+
+    &:has(input[name="mainColor"]){
+        border: .25rem solid var(--shape-button);
+        border-radius: 62.18rem;
+        outline: .125rem solid var(--shape-button);
+        height: 2.5rem;
+        width: 2.5rem;
+
+        &:hover {
+            border-color: var(--shape-hover);
+            outline-color: var(--shape-hover);
+        }
+
+        &:has(:checked) {
+            border-color: var(--shape-hover);
+            outline: .125rem solid var(--brand-light);
+        }
+    }
+ 
     
-    
-    
-    
+
 }

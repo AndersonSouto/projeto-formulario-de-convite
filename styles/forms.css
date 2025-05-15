@@ -3,6 +3,8 @@
 form {
     margin-top: 2.5rem;
     gap: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 fieldset {
