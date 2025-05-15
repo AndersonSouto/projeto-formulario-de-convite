@@ -50,10 +50,21 @@
 
 .flex {
     display: flex;
-    gap: 1rem;
+}
+
+.flex-flow-col {
+    flex-direction: column;
 }
 
 .flex-1 {
     flex: 1;
+}
+
+.gap-16 {
+    gap: 1rem;
+}
+
+.gap-28 {
+    gap: 1.75rem;
 }
 

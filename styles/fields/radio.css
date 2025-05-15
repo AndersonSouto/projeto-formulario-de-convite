@@ -32,7 +32,9 @@
         position: absolute;
         inset: 0;
     }
-    
+    & label {
+        padding: 0;
+    }
 
     &:has(svg){
         border-radius: 0.31rem;

@@ -10,6 +10,9 @@ form {
 fieldset {
     border: none;
     display: flex;
-    gap: 1rem;
     flex-direction: column;
+
+    .customization {
+        gap: 1.75rem;
+    }
 }
