@@ -90,6 +90,15 @@
         border: 1px solid transparent;
         border-radius: .5rem;
         outline: 1px solid var(--input-stroke);
+
+        &:hover {
+            outline-color: var(--shape-button);
+        }
+
+        &:has(:checked) {
+            border-color: var(--brand-light);
+            outline-color: var(--brand-light);
+        }
     }
 
 }
