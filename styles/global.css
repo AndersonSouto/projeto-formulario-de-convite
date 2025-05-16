@@ -60,6 +60,10 @@
     flex: 1;
 }
 
+.gap-8 {
+    gap: .5rem;
+}
+
 .gap-16 {
     gap: 1rem;
 }

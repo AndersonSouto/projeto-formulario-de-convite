@@ -12,7 +12,5 @@ fieldset {
     display: flex;
     flex-direction: column;
 
-    .customization {
-        gap: 1.75rem;
-    }
 }
+
