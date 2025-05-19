@@ -1,0 +1,44 @@
+.switch-wrapper {
+    display: flex;
+    position: relative;
+    gap: .75rem;
+    align-items: center;
+    height: 3rem;
+
+}
+
+.switch-svg-on, .label-light{
+    display: none;
+}
+
+.switch-wrapper input:checked ~ label .label-light{
+    display: inline;
+}
+
+.switch-wrapper input:checked ~ .switch-svg-on {
+    display: inline;
+}
+
+.switch-wrapper input:checked ~ label .label-dark {
+    display: none;
+}
+
+.switch-wrapper input:checked ~ .switch-svg-off {
+    display: none;
+}
+
+.switch-wrapper span {
+    height: 2rem;
+}
+
+.switch-wrapper input {
+    background: none;
+    border: none;
+    position: absolute;
+
+}
+
+.switch-wrapper label {
+    padding-bottom: 0;
+}
+
