@@ -1,0 +1,37 @@
+.dropzone{
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+    height: 3rem;
+}
+
+.dropzone input {
+    background: none;
+    border: none;
+}
+
+.dropzone input[type="file"]::-webkit-file-upload-button {
+    display: none;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--shape-button);
+    border-radius: .5rem;
+    padding: .25rem .75rem;
+    height: 2.5rem;
+    gap: .5rem;
+}
+
+.button img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.button label {
+    padding: 0;
+    color: var(--text-heading);
+    font-weight: 600;
+}
+

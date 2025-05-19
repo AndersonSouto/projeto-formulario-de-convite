@@ -40,5 +40,6 @@
 
 .switch-wrapper label {
     padding-bottom: 0;
+    color: var(--text-heading);
 }
 
