@@ -297,7 +297,7 @@
                                 </div>
 
                                 <div class="droparea-wrapper flex-2">
-                                    <label for="dropzone">Foto de capa</label>
+                                    <label for="coverPicture">Foto de capa</label>
 
                                     <div class="dropzone">
                                         
@@ -307,13 +307,71 @@
                                             
                                         </div>
                                         
-                                        <input type="file" name="coverPicture" id="coverPicture">
+                                        <input type="file" name="coverPicture" id="coverPicture" required>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
+                        <!-- TODO: Arrumar a borda da tela principal  -->
                     </fieldset>
+
+                    <fieldset class="contact-info">
+
+                        <div class="header">
+                            <img src="/assets/icons/contact.svg" alt="">
+                            <h2>Dados para contato</h2>
+                        </div>
+
+                        
+
+                        <div class="flex flex-flow-col gap-16">
+
+                            <div class="input-wrapper">
+                                <label for="full-name">Nome</label>
+                                <input type="text" name="full-name" id="full-name" placeholder="Nome completo" required>
+                            </div>
+
+                            <div class="flex gap-16">
+
+                                <div class="input-wrapper flex-1">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                                </div>
+
+                                <div class="input-wrapper flex-1">
+                                    <label for="tel">Telefone</label>
+                                    <input type="tel" name="tel" id="tel" pattern="[0-9]{2}-[0-9]{5}=[0-9]{4}" placeholder="(99) 99999-9999">
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    
+
+                    <fieldset class="terms input-wrapper">
+
+                        <hr>
+                        
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="checkbox1" id="checkbox1">
+                            <label for="checkbox1">Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></label>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="checkbox2" id="checkbox2">
+                            <label for="checkbox2">Aceito receber atualizações e promoções por e-mail</label>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="checkbox3" id="checkbox3">
+                            <label for="checkbox3">Aceito receber atualizações e promoções por SMS</label>
+                        </div>
+                        
+                    </fieldset>
+
+                    <button type="submit">Gerar convite</button>
 
                 </form>
             </div>

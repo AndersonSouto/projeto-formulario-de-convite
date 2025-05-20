@@ -1,10 +1,27 @@
+
+
 .switch-wrapper {
     display: flex;
     position: relative;
     gap: .75rem;
     align-items: center;
     height: 3rem;
+}
 
+.switch-wrapper span {
+    height: 2rem;
+}
+
+.switch-wrapper input {
+    background: none;
+    border: none;
+    position: absolute;
+
+}
+
+.switch-wrapper label {
+    padding-bottom: 0;
+    color: var(--text-heading);
 }
 
 .switch-svg-on, .label-light{
@@ -27,19 +44,42 @@
     display: none;
 }
 
-.switch-wrapper span {
-    height: 2rem;
+.checkbox-wrapper {
+    display: flex;
+    padding: .25rem 0;
+    gap: .75rem;
+    align-content: flex-start;
+
+    
 }
 
-.switch-wrapper input {
-    background: none;
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    
+}
+
+.checkbox-wrapper label {
+    padding: 0;
+}
+.checkbox-wrapper input {
     border: none;
-    position: absolute;
-
+    border-radius: .125rem;
+    background: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0;
+    background: url(/assets/icons/checkbox-off.svg) no-repeat center/cover;
+   
 }
 
-.switch-wrapper label {
-    padding-bottom: 0;
-    color: var(--text-heading);
+.checkbox-wrapper input:checked {
+    background: url(/assets/icons/checkbox-on.svg) no-repeat center/cover;
 }
+
+
+
+
+
+
 
