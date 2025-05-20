@@ -3,7 +3,6 @@
     height: 100vh;
     overflow: hidden;
     justify-content: center;
-    
 }
 
 aside {
@@ -48,7 +47,7 @@ main {
     width: 51.25rem;
     padding: 5rem 8.12rem;
     border: 1.25rem solid var(--shape-background);
-    border-radius: 0 1.25rem 1.25rem 1.25rem;
+    border-radius: 0 1.25rem 1.25rem 0;
     background-color: var(--shape-body);
     
     & h1 {
@@ -60,8 +59,12 @@ main {
     & .main-container {
         max-width: 35rem;
         margin: auto;
+        border-radius: .75rem;
     }
 }
 
+main::-webkit-scrollbar {
+    display: none;
+}
 
 

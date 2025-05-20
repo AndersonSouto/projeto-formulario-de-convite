@@ -39,7 +39,7 @@
 
                         <div class="header">
 
-                            <img src="/assets/icons/calendar.svg" alt="">
+                            <img src="/assets/icons/calendar.svg" alt="icone de calendario">
                             <h2>Sobre o evento</h2>
 
                         </div>
@@ -50,7 +50,10 @@
                                 <label for="title">Título</label>
                                 <input type="text" name="title" id="title"
                                 placeholder="Nome do evento" required>
-
+                                <div class="error flex">
+                                    <img src="/assets/icons/error.svg" alt="icone de erro">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
 
                             <div class="flex gap-16">
@@ -134,7 +137,7 @@
                                 <div class="radio-wrapper" id="color-picker">
 
                                     <div class="radio-inner color-picker" style="background: var(--brand-light)">
-                                        <input type="radio" name="mainColor" id="brandLight" value="brandLight">
+                                        <input type="radio" name="mainColor" id="brandLight" value="brandLight" checked>
                                     </div>
                                     
                                     <div class="radio-inner" style="background: var(--navy) ;">
@@ -187,74 +190,74 @@
                                 <div class="radio-wrapper" id="theme-picker">
 
                                     <div class="radio-inner">
-                                        <input type="radio" name="themePicker" id="aniversario" value="aniversario">
-                                        <img src="/assets/images/aniversario.png" alt="">
+                                        <input type="radio" name="themePicker" id="aniversario" value="aniversario" checked>
+                                        <img src="/assets/images/aniversario.png" alt="imagem de bolo de aniversário">
                                         <label for="aniversario">Aniversário</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="infantil" value="infantil">
-                                        <img src="/assets/images/infantil.png" alt="">
+                                        <img src="/assets/images/infantil.png" alt="imagem de chapeu e pratos coloridos de festa infantil">
                                         <label for="infantil">Infantil</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="formatura" value="formatura">
-                                        <img src="/assets/images/formatura.png" alt="">
+                                        <img src="/assets/images/formatura.png" alt=" imagem de chapéu de formatura">
                                         <label for="formatura">Formatura</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="casamento" value="casamento">
-                                        <img src="/assets/images/casamento.png" alt="">
+                                        <img src="/assets/images/casamento.png" alt="imagem de aliança de casamento">
                                         <label for="casamento">Casamento</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="cha-bebe" value="cha-bebe">
-                                        <img src="/assets/images/cha-bebe.png" alt="">
+                                        <img src="/assets/images/cha-bebe.png" alt="imagem de flor e lenço umedecido">
                                         <label for="cha-bebe">Chá de bebê</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="cha-panela" value="cha-panela">
-                                        <img src="/assets/images/cha-panela.png" alt="">
+                                        <img src="/assets/images/cha-panela.png" alt="imagem de uma cozinha">
                                         <label for="cha-panela">Chá de panela</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="carnaval" value="carnaval">
-                                        <img src="/assets/images/carnaval.png" alt="">
+                                        <img src="/assets/images/carnaval.png" alt=" imagem de confete de carnaval">
                                         <label for="carnaval">Carnaval</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="pascoa" value="pascoa">
-                                        <img src="/assets/images/pascoa.png" alt="">
+                                        <img src="/assets/images/pascoa.png" alt="imagem de um ovo de pascoa colorido com chapéu de orelha de coelho">
                                         <label for="pascoa">Páscoa</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="sao-joao" value="sao-joao">
-                                        <img src="/assets/images/sao-joao.png" alt="">
+                                        <img src="/assets/images/sao-joao.png" alt="imagem de decoração de festa são joão">
                                         <label for="sao-joao">São João</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="halloween" value="halloween">
-                                        <img src="/assets/images/halloween.png" alt="">
+                                        <img src="/assets/images/halloween.png" alt="imagem de aboboras enfeitadas para o halloween">
                                         <label for="halloween">Halloween</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="natal" value="natal">
-                                        <img src="/assets/images/natal.png" alt="">
+                                        <img src="/assets/images/natal.png" alt="imagem de dois presentes">
                                         <label for="natal">Natal</label>
                                     </div>
 
                                     <div class="radio-inner">
                                         <input type="radio" name="themePicker" id="outro" value="outro">
-                                        <img src="/assets/images/outro.png" alt="">
+                                        <img src="/assets/images/outro.png" alt="imagem de pessoas brindando">
                                         <label for="outro">Outro</label>
                                     </div>
 
@@ -302,7 +305,7 @@
                                     <div class="dropzone">
                                         
                                         <div class="button ">
-                                            <img src="/assets/icons/file.svg" alt="">
+                                            <img src="/assets/icons/file.svg" alt="icone de upload">
                                             <label for="coverPicture">Selecionar</label>
                                             
                                         </div>
@@ -313,13 +316,12 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- TODO: Arrumar a borda da tela principal  -->
                     </fieldset>
 
                     <fieldset class="contact-info">
 
                         <div class="header">
-                            <img src="/assets/icons/contact.svg" alt="">
+                            <img src="/assets/icons/contact.svg" alt="icone de contato">
                             <h2>Dados para contato</h2>
                         </div>
 
@@ -330,6 +332,10 @@
                             <div class="input-wrapper">
                                 <label for="full-name">Nome</label>
                                 <input type="text" name="full-name" id="full-name" placeholder="Nome completo" required>
+                                <div class="error flex">
+                                    <img src="/assets/icons/error.svg" alt="icone de erro">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
 
                             <div class="flex gap-16">
@@ -347,8 +353,6 @@
                         </div>
 
                     </fieldset>
-
-                    
 
                     <fieldset class="footer input-wrapper">
 

@@ -17,6 +17,18 @@ textarea:focus {
     outline: none;
 }
 
+input:required + .error {
+    align-items: center;
+    gap: .5rem;
+    font: var(--body-sm);
+    color: var(--danger);
+    padding-top: .5rem;
+}
+
+input:valid + .error {
+    display: none;
+}
+
 
 
 ::placeholder {
